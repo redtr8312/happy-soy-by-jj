@@ -18,7 +18,7 @@ header {
   background-color: #9EBE00;
   padding: 20px 0;
   text-align: center;
-  color: #fff;
+  color: #110200;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
@@ -33,7 +33,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #110200;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
@@ -43,19 +43,23 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* --- ADD THIS AFTER HEADER STYLES --- */
-
-/* Logo container */
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* space between logo and text */
+  gap: 15px;
 }
 
 .logo {
-  height: 80px; /* You can adjust depending on your logo size */
+  height: 60px; /* smaller default for bigger screens */
   width: auto;
+}
+
+/* Responsive logo size for small screens (mobile phones) */
+@media (max-width: 600px) {
+  .logo {
+    height: 80px; /* bigger logo on mobile */
+  }
 }
 
 
