@@ -19,7 +19,7 @@ header {
   padding: 20px 0;
   text-align: center;
   color: #110200;
-  font-size: 1.3em;
+  font-size: 1.4em;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
@@ -80,7 +80,7 @@ header nav ul li a:hover {
 }
 
 .hero p {
-  font-size: 1.3em;
+  font-size: 1.7em;
   margin-bottom: 20px;
 }
 
