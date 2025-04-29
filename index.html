@@ -2,109 +2,361 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Happy Soy by JJ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Soy by JJ | Artisanal Tofu Delights</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner">
+      <div class="bean"></div>
+      <div class="bean"></div>
+      <div class="bean"></div>
+    </div>
+  </div>
 
   <!-- Header -->
-<header>
-    <div class="logo-container">
-      <img src="logo.png" alt="Happy Soy by JJ Logo" class="logo">
-      <h1>Happy Soy by JJ</h1>
+  <header class="sticky-header">
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="logo.png" alt="Happy Soy by JJ Logo" class="logo">
+        <h1 class="logo-text">Happy Soy <span>by JJ</span></h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about" class="nav-link"><span>About</span></a></li>
+          <li><a href="#products" class="nav-link"><span>Products</span></a></li>
+          <li><a href="#gallery" class="nav-link"><span>Gallery</span></a></li>
+          <li><a href="#quality" class="nav-link"><span>Quality</span></a></li>
+          <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#quality">Quality</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
+    <div class="hero-video">
+      <video autoplay muted loop playsinline>
+        <source src="hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
     <div class="hero-content">
-      <h2>Fresh, handcrafted tofu delivered to you</h2>
-      <p>Smiles start here. Naturally.</p>
-      <a href="#contact" class="btn">Order Now</a>
+      <h2 class="hero-title">
+        <span class="title-line">Fresh, handcrafted tofu</span>
+        <span class="title-line">delivered to you</span>
+      </h2>
+      <p class="hero-subtitle">Smiles start here. Naturally.</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary pulse">Explore Products</a>
+        <a href="#contact" class="btn btn-secondary">Order Now</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow"></div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="container">
-    <h2>About Us</h2>
-    <div class="card">
-      <p>Happy Soy by JJ isn’t just another tofu brand — it’s a one-of-a-kind experience. Every block we create is a true labor of love, crafted with care, sincerity, and respect for tradition. Using only the finest soybeans, pure water, and time-honored methods, we deliver fresh, delicious tofu that’s free from preservatives and full of natural goodness. At Happy Soy, we believe in honest food — simple, nourishing, and made the way it’s meant to be. Our tofu is uniquely delicate, rich in flavor, and versatile enough for any kitchen. From our hands to your table, we’re proud to share a product that’s as genuine and special as the community we serve. Taste the difference. Feel the sincerity. Experience the joy of Happy Soy by JJ — truly one of a kind.</p>
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Us</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <div class="divider-icon"><i class="fas fa-seedling"></i></div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-frame">
+            <img src="about-image.jpg" alt="Handcrafting tofu">
+          </div>
+        </div>
+        <div class="about-text card">
+          <p>Happy Soy by JJ isn't just another tofu brand — it's a one-of-a-kind experience. Every block we create is a true labor of love, crafted with care, sincerity, and respect for tradition.</p>
+          <p>Using only the finest soybeans, pure water, and time-honored methods, we deliver fresh, delicious tofu that's free from preservatives and full of natural goodness.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Products Section -->
-  <section id="products" class="container">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="firm_tofu.jpg" alt="Firm Tofu">
-        <h3>Firm Tofu</h3>
-        <p>Perfect for grilling, stir-fry, and stews.</p>
-        <p><strong>₱40 / 500g block</strong></p>
+  <section id="products" class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Products</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <div class="divider-icon"><i class="fas fa-leaf"></i></div>
+          <div class="divider-line"></div>
+        </div>
+        <p class="section-subtitle">Premium quality, handcrafted with care</p>
       </div>
-      <div class="product-card">
-        <img src="flavored_tofu.jpg" alt="Flavored Tofu">
-        <h3>Flavored Tofu</h3>
-        <p>Infused with delicious natural flavors.</p>
-        <p><strong>₱230 / 500g </strong></p>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="firm_tofu.jpg" alt="Firm Tofu">
+            <div class="product-badge">Best Seller</div>
+          </div>
+          <div class="product-info">
+            <h3>Firm Tofu</h3>
+            <p class="product-description">Perfect for grilling, stir-fry, and stews with its dense texture that holds shape beautifully.</p>
+            <div class="product-footer">
+              <span class="price">₱60 <small>/ 500g block</small></span>
+              <button class="btn btn-small">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card featured">
+          <div class="product-image">
+            <img src="flavored_tofu.jpg" alt="Flavored Tofu">
+            <div class="product-badge">New!</div>
+          </div>
+          <div class="product-info">
+            <h3>Flavored Tofu</h3>
+            <p class="product-description">Infused with delicious natural flavors. Try our signature garlic-herb and spicy szechuan varieties.</p>
+            <div class="product-footer">
+              <span class="price">₱150 <small>/ 500g</small></span>
+              <button class="btn btn-small">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card coming-soon">
+          <div class="product-image">
+            <img src="tofu-skin.jpg" alt="Coming Soon">
+            <div class="product-overlay">
+              <span>Coming Soon</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Tofu Chips</h3>
+            <p class="product-description">Delicate layers of tofu skin with savory fillings. Launching soon!</p>
+            <div class="product-footer">
+              <span class="price">₱-- <small>/ pack</small></span>
+              <button class="btn btn-small" disabled>Notify Me</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="container">
-    <h2>Our Gallery</h2>
-    <div class="gallery-container">
-      <div class="gallery-track">
-        <div class="gallery-item"><img src="gallery1.jpg" alt="Gallery Image 1"></div>
-        <div class="gallery-item"><img src="gallery2.jpg" alt="Gallery Image 2"></div>
-        <div class="gallery-item"><img src="gallery3.jpg" alt="Gallery Image 3"></div>
-        <div class="gallery-item"><img src="gallery4.jpg" alt="Gallery Image 4"></div>
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Gallery</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <div class="divider-icon"><i class="fas fa-camera"></i></div>
+          <div class="divider-line"></div>
+        </div>
+        <p class="section-subtitle">Behind the scenes of our craft</p>
+      </div>
+      <div class="gallery-container">
+        <div class="gallery-controls">
+          <button class="gallery-nav prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+          <button class="gallery-nav next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="gallery-track">
+          <div class="gallery-item">
+            <img src="gallery1.jpg" alt="Making tofu process">
+            <div class="gallery-caption">Freshly made tofu</div>
+          </div>
+          <div class="gallery-item">
+            <img src="gallery2.jpg" alt="Fresh tofu blocks">
+            <div class="gallery-caption">Thorough preparations</div>
+          </div>
+          <div class="gallery-item">
+            <img src="gallery3.jpg" alt="Tofu dishes">
+            <div class="gallery-caption">Delicious creations</div>
+          </div>
+          <div class="gallery-item">
+            <img src="gallery4.jpg" alt="Farm fresh ingredients">
+            <div class="gallery-caption">Quality ingredients</div>
+          </div>
+          <div class="gallery-item">
+            <img src="gallery5.jpg" alt="Delivery process">
+            <div class="gallery-caption">Careful packaging</div>
+          </div>
+		  <div class="gallery-item">
+            <img src="gallery6.jpg" alt="Delivery process">
+            <div class="gallery-caption">Unique flavor</div>
+          </div>
+        </div>
+        <div class="gallery-pagination"></div>
       </div>
     </div>
   </section>
 
   <!-- Quality Section -->
-  <section id="quality" class="container">
-    <h2>Our Quality Promise</h2>
-    <div class="card">
-      <ul>
-        <li> Handcrafted using a grinder machine, cooked and molded by hand.</li>
-        <li> No preservatives.</li>
-        <li> Fresh delivery from Monday to Saturday.</li>
-        <li> Working towards sourcing Non-GMO soybeans soon!</li>
-      </ul>
+  <section id="quality" class="section bg-pattern">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Quality Promise</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <div class="divider-icon"><i class="fas fa-award"></i></div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+      <div class="quality-grid">
+        <div class="quality-card">
+          <div class="quality-icon">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <h3>Handcrafted</h3>
+          <p>Made using a grinder machine, cooked and molded by hand with traditional techniques.</p>
+        </div>
+        <div class="quality-card">
+          <div class="quality-icon">
+            <i class="fas fa-ban"></i>
+          </div>
+          <h3>No Preservatives</h3>
+          <p>100% natural with no artificial additives or preservatives.</p>
+        </div>
+        <div class="quality-card">
+          <div class="quality-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Fresh Delivery</h3>
+          <p>Delivered fresh from Monday to Saturday to ensure maximum freshness.</p>
+        </div>
+        <div class="quality-card">
+          <div class="quality-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Non-GMO Future</h3>
+          <p>Working towards sourcing Non-GMO soybeans for even better quality.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p>📞 Phone: <a href="tel:09675820261">0967 582 0261</a></p>
-      <p>📧 Email: <a href="mailto:happysoyjj@gmail.com">happysoyjj@gmail.com</a></p>
-      <p>📍 Delivery Area: Alubijid, El Salvador, and Opol (within highways)</p>
-      <p>📦 Delivery Days: Monday to Saturday</p>
-      <p>Ⓕ <a href="https://www.facebook.com/profile.php?id=61575955640083" target="_blank">Find us on Facebook!</a></p>
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <div class="divider-icon"><i class="fas fa-envelope"></i></div>
+          <div class="divider-line"></div>
+        </div>
+        <p class="section-subtitle">Get in touch for orders and inquiries</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-detail">
+              <h3>Phone</h3>
+              <a href="tel:09675820261">0967 582 0261</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-detail">
+              <h3>Email</h3>
+              <a href="mailto:happysoyjj@gmail.com">happysoyjj@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-detail">
+              <h3>Delivery Area</h3>
+              <p>Alubijid, El Salvador, and Opol (within highways)</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="contact-detail">
+              <h3>Delivery Days</h3>
+              <p>Monday to Saturday</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61575955640083" target="_blank" class="social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="orderForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <select id="product" required>
+                <option value="">Select Product</option>
+                <option value="firm">Firm Tofu</option>
+                <option value="flavored">Flavored Tofu</option>
+                <option value="both">Both Products</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message or Special Instructions" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Order</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Happy Soy by JJ. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Happy Soy by JJ. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="scripts.js"></script>
-
 </body>
 </html>
